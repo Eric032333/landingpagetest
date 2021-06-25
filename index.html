@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/all.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <title>potato</title>
+</head>
+
+<script>
+
+
+window.onscroll = function() {scrollFunction()};
+var y = 0
+
+function scrollFunction() {
+  y = document.documentElement.scrollTop
+
+  var scrollImg = document.getElementById("imgscroll")
+  
+  switch (true) {
+    case y > 600 && y < 1800:
+      scrollImg.style.left = "2%";
+      break;
+    case y < 600 || y > 1800:
+      scrollImg.style.left = "-100%";
+      break;
+    default:
+      break;
+  }
+}
+
+
+
+
+
+
+jQuery(document).ready(function($) {
+  $(".scroll").click(function(event){
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+  });
+});
+
+
+$(function(){
+  var navMain = $(".navbar-collapse");
+    navMain.on("click", "a:not([data-toggle])", null, function () {
+    navMain.collapse('hide');
+  });
+
+  // $('.joinnow-btn').click(function(event){
+  //   event.preventDefault();
+  //   $('html,body').animate({scrollTop:$('#joinform').offset().top},500);
+  // });
+  // $('.join-us').click(function(event){
+  //   event.preventDefault();
+  //   $('html,body').animate({scrollTop:$('#joinform').offset().top},500);
+  // });
+
+  $('.navbar-nav>a').click(function(){
+    $('.active').toggleClass("active");
+    $(this).toggleClass("active");
+  })
+
+});
+
+
+
+
+
+
+</script>
+
+<body>
+<div class="joinnow-btn" style="text-align: center; padding-top: 4px; z-index: 100;">
+  <div class="pic"><a href="https://www.potatomedia.co/" target="_blank">
+    <img src="/image/joinnow-btn.png" style="width: 60%;" alt="">
+  </div>
+  <div class="joinnow-title"><p style="font-size: 14px; color: #2E3A59;">立即加入</p></div></a>
+</div></a>
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <img id="logo" src="/image/logo.svg" alt="" href="#"></a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="scroll nav-item nav-link active" href="#our">我們是誰<span class="sr-only">(current)</span></a>
+        <a class="scroll nav-item nav-link" href="#traits">創作者特質</a>
+        <a class="scroll nav-item nav-link" href="#income">創作者收益</a>
+        <a class="scroll nav-item nav-link" href="#system">創作者制度</a>
+        <a class="scroll nav-item nav-link" href="#resource">創作者資源</a>
+        <a class="scroll nav-item nav-link" href="#partner">合作夥伴</a>
+      </div>
+    </div>
+</nav>
+<div class="welcome-bg">
+  <div class="welcome container">
+    <div class="title-group">
+      <h1 class = "welcome-title" style="color:#FFB200; font-size: 40px;">Potato Media</h1>
+      <h1 class = "welcome-title" style="color:white;">展現自我</h1>
+      <p class = "welcome-p1" style="color:white;">Be famous, be yourself</p>
+      <p class = "welcome-p2" style="color:white;">讓我們為了你的才華買單</p>
+    </div>
+  </div>
+  <div class="join-us-btn">
+    <div class="join-us">
+        <a href="https://www.potatomedia.co/" target="_blank"><p class="join-us-p">立即成為創作者</p></a>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container our col-lg-6 col-10" id="our">
+  <h2 class="our-title" style="padding-bottom: 65px;">
+    我們是誰？
+  </h2>
+  <p class= "our-p">Potato Media為開放式的綜合題材內容平台，任何人都可以在站內貢獻內容且直接獲得收益。
+  </p>
+  <p class= "our-p">不論是內容創作者或是參與互動的活躍用戶，皆可透過我們創造的貢獻挖礦機制，每日獲得實際收益，輕鬆將你的內容及互動變。
+  </p>
+</div>
+
+
+<div class="pic">
+    <img id="imgscroll" src="/image/traits-man.svg" alt="">
+</div>
+<div class="traits-bg"style="position: relative;" id="traits">
+
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">      
+        <div class="traits-c container"> 
+          <div class="traits-g row col-lg-10 col-12 m-auto">
+            <div class="traits card col-6">
+              <div class="pic">
+                <img src="/image/icon-food.png" style="width: 60px; margin: auto;" class="card-img-top" alt="...">
+                <p class="card-title">美食</p>
+              </div>
+            </div>
+            <div class="traits card col-6">
+              <div class="pic">
+                <img src="/image/icon-game.png" style="width: 60px; margin: auto;" class="card-img-top" alt="...">
+                <p class="card-title">電玩</p>
+              </div>
+            </div>
+            <div class="traits card col-6">
+              <div class="pic">
+                <img src="/image/icon-3c.png" style="width: 60px; margin: auto;" class="card-img-top" alt="...">
+                <p class="card-title">3C</p>
+              </div>
+            </div>
+            <div class="traits card col-6">
+              <div class="pic">
+                <img src="/image/icon-political.png" style="width: 60px; margin: auto;" class="card-img-top" alt="...">
+                <p class="card-title">政治時事</p>
+              </div>
+            </div>
+            <div class="traits card col-6">
+              <div class="pic">
+                <img src="/image/icon-car.png" style="width: 60px; margin: auto;" class="card-img-top" alt="...">
+                <p class="card-title">汽機車</p>
+              </div>
+            </div>
+            <div class="traits card col-6">
+              <div class="pic">
+                <img src="/image/icon-doll.png" style="width: 60px; margin: auto;" class="card-img-top" alt="...">
+                <p class="card-title">公仔模型</p>
+              </div>
+            </div>
+            <div class="traits card col-6">
+              <div class="pic">
+                <img src="/image/icon-sport.png" style="width: 60px; margin: auto;" class="card-img-top" alt="...">
+                <p class="card-title">運動</p>
+              </div>
+            </div>
+            <div class="traits card col-6">
+              <div class="pic">
+                <img src="/image/icon_comic.png" style="width: 60px; margin: auto;" class="card-img-top" alt="...">
+                <p class="card-title">動漫</p>
+              </div>
+            </div>
+            <div class="traits card col-6">
+              <div class="pic">
+                <img src="/image/icon-trophy.png" style="width: 60px; margin: auto;" class="card-img-top" alt="...">
+                <p class="card-title">電競</p>
+              </div>
+            </div>
+            <div class="traits card col-6">
+              <div class="pic">
+                <img src="/image/icon-stock.png" style="width: 60px; margin: auto;" class="card-img-top" alt="...">
+                <p class="card-title">投資理財</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+          <div class="traits-c container"> 
+              <div class="traits-g row col-lg-10 col-12 m-auto">
+                <div class="traits card col-6">
+                  <div class="pic">
+                    <img src="/image/icon-bombnews.png" style="width: 60px; margin: auto;" class="card-img-top" alt="...">
+                    <p class="card-title">爆料</p>
+                  </div>
+                </div>
+                <div class="traits card col-6">
+                  <div class="pic">
+                    <img src="/image/icon-bitcoin.png" style="width: 60px; margin: auto;" class="card-img-top" alt="...">
+                    <p class="card-title">區塊鏈</p>
+                  </div>
+                </div>
+                <div class="traits card col-6">
+                  <div class="pic">
+                    <img src="/image/icon-makeup.png" style="width: 60px; margin: auto;" class="card-img-top" alt="...">
+                    <p class="card-title">美妝</p>
+                  </div>
+                </div>
+                <div class="traits card col-6">
+                  <div class="pic">
+                    <img src="/image/icon-dog.png" style="width: 60px; margin: auto;" class="card-img-top" alt="...">
+                    <p class="card-title">寵物</p>
+                  </div>
+                </div>
+                <div class="traits card col-6">
+                  <div class="pic">
+                    <img src="/image/icon-beauty.png" style="width: 60px; margin: auto;" class="card-img-top" alt="...">
+                    <p class="card-title">正妹</p>
+                  </div>
+                </div>
+                <div class="traits card col-6">
+                  <div class="pic">
+                    <img src="/image/icon-starsign.png" style="width: 60px; margin: auto;" class="card-img-top" alt="...">
+                    <p class="card-title">星座</p>
+                  </div>
+                </div>
+                <div class="traits card col-6">
+                  <div class="pic">
+                    <img src="/image/icon-wear.png" style="width: 60px; margin: auto;" class="card-img-top" alt="...">
+                    <p class="card-title">時尚穿搭</p>
+                  </div>
+                </div>
+                <div class="traits card col-6">
+                  <div class="pic">
+                    <img src="/image/icon-tvshow.png" style="width: 60px; margin: auto;" class="card-img-top" alt="...">
+                    <p class="card-title">影劇</p>
+                  </div>
+                </div>
+                <div class="traits card col-6">
+                  <div class="pic">
+                    <img src="/image/icon-heart.png" style="width: 60px; margin: auto;" class="card-img-top" alt="...">
+                    <p class="card-title">感情</p>
+                  </div>
+                </div>
+                <div class="traits card col-6">
+                  <div class="pic">
+                    <img src="/image/icon-shopping.png" style="width: 60px; margin: auto;" class="card-img-top" alt="...">
+                    <p class="card-title">購物</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+    <!-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a> -->
+
+    <a class="carousel-control-prev" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="fa fa-chevron-left fa-lg" style="color:#2E3A59;"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="fa fa-chevron-right fa-lg" style="color:#2E3A59;"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+</div>
+
+
+<div class="container" id="income">
+  <div class="income-group col-lg-12 col-12">
+    <div class="income-pic col-lg-6 col-12">
+      <img src="/image/mobile.png" style="width: 90%;" alt="">
+    </div>
+    <div class="income col-lg-6 col-12">
+      <h2 class="income-second-title">平台收益</h2>
+      <h5 class="income-small-title">只要你</h5>
+      <div class="income-btn d-flex">
+          <i class="fas fa-check align-self-center" style="padding-right:6px; color:#56C961;"></i>
+        <p class="" style="font-size: 14px;">文章被點讚</p>
+      </div>
+      <div class="income-btn d-flex">
+        <i class="fas fa-check align-self-center" style="padding-right:6px; color:#56C961;"></i>
+        <p class="" style="font-size: 14px;" >文章留言、被留言</p>
+      </div>
+      <div class="income-btn d-flex">
+        <i class="fas fa-check align-self-center" style="padding-right:6px; color:#56C961;"></i>
+        <p class="" style="font-size: 14px;" >分享連結、專屬連結/被點擊專屬連結</p>
+      </div>
+      <div class="income-btn d-flex">
+        <i class="fas fa-check align-self-center" style="padding-right:6px; color:#56C961;"></i>
+        <p class="" style="font-size: 14px;" >邀請、被邀請好友註冊成功</p>
+      </div>
+      <p class="income-p col-lg-10">皆可獲得積分，積分會轉換成可兌現之代幣，
+        粉絲就是你的即戰力，流量就是你的變現力。
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="container"  id="system">
+  <div class="system-group col-lg-12 col-12">
+    <div class="system col-lg-6 col-12">
+      <h2 class="system-second-title">平台收益</h2>
+      <h5 class="system-small-title">粉絲收益制度</h5>
+      <p class="system-p col-lg-8">
+        在potato media，不只是創作者，就連使用者
+        也可以因為互動而得到收益。
+      </p>
+      <p class="system-p col-lg-8">
+        只要使用你的推薦碼，就是你的粉絲，他所有的
+        行為，都可以為你帶來額外的積分獎勵，每個具
+        有影響力的人都是流量金字塔的頂端，而底下的
+        粉絲都在為你帶來收益。
+      </p>
+    </div>
+    <div class="system-pic col-lg-6 col-12">
+      <img src="/image/mouse-house.png" style="width: 100%;" alt="">
+    </div>
+  </div>
+</div>
+
+
+<div class="resource container" id="resource">
+  <h2 class="resource-second-title" style="text-align: center;">平台資源<div class="box-border col-1 m-auto"></div></h2>
+  <div class="row justify-content-center">
+    <div class="resource-pic col-lg-6 col-sm-12">
+      <img src="/image/aims.svg" style="width: 100%;" alt="">
+    </div>
+  </div>
+</div>
+
+
+
+<div id="partner"></div>
+<div class="partner container">
+  <h2 class="partner-second-title" style="text-align: center;">駐站作家<div class="box-border col-1 m-auto"></div></h2>
+
+  <div id="carousel-example-partner" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-partner" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-partner" data-slide-to="1"></li>
+      <li data-target="#carousel-example-partner" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="partner-s container">
+          <div class="partner card"><a href="https://www.facebook.com/doctorlee53" target="_blank">
+            <div class="row justify-content-center">
+              <div class="pic">
+                <img src="/image/card-head.png" alt="">
+              </div>
+              <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">李亦伸LYS</p>
+              <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">籃球記者、球評</p>
+            </div></a>
+          </div>
+          <div class="partner card"><a href="https://www.facebook.com/ChicoChica.Fun" target="_blank">
+            <div class="row justify-content-center">
+              <div class="pic">
+                <img src="/image/card-head2.png" alt="">
+              </div>
+              <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">奇可奇卡</p>
+              <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">生活插畫家</p>
+            </div></a>
+          </div>
+          <div class="partner card"><a href="https://www.youtube.com/channel/UCEsOyx6LKAyiHacXUGND9KQ" target="_blank">
+            <div class="row justify-content-center">
+              <div class="pic">
+                <img src="/image/card-head3.png" alt="">
+              </div>
+              <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">一貧伏特加</p>
+              <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">棒球 Youtuber</p>
+            </div></a>
+          </div>
+          <div class="partner card"><a href="https://www.youtube.com/channel/UCVIycx42aqhp8-ZRyeLN4Gw" target="_blank">
+            <div class="row justify-content-center">
+              <div class="pic">
+                <img src="/image/card-head4.png" alt="">
+              </div>
+              <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">亞次圓</p>
+              <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">動漫 Youtuber</p>
+            </div></a>
+          </div>
+          <div class="partner card"><a href="https://www.youtube.com/channel/UClZyxQNa1B4q9YSG7Z8TGpA/featured" target="_blank">
+            <div class="row justify-content-center">
+              <div class="pic">
+                <img src="/image/card-head5.png" alt="">
+              </div>
+              <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">無臉</p>
+              <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">動漫 Youtuber</p>
+            </div></a>
+          </div>   
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="partner-s container">
+          <div class="partner card"><a href="https://www.facebook.com/3cdog" target="_blank">
+            <div class="row justify-content-center">
+              <div class="pic">
+                <img src="/image/card-head6.png" alt="">
+              </div>
+              <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">科技狗 3C Dog</p>
+              <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">3C自媒體</p>
+            </div></a>
+          </div>
+          <div class="partner card"><a href="https://www.facebook.com/HankRS225" target="_blank">
+            <div class="row justify-content-center">
+              <div class="pic">
+                <img src="/image/card-head7.png" alt="">
+              </div>
+              <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">Hank 汽車部落格</p>
+              <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">汽車自媒體</p>
+            </div></a>
+          </div>
+          <div class="partner card"><a href="https://www.youtube.com/channel/UC291LvruKOnyWPHDrL1U3yw" target="_blank">
+            <div class="row justify-content-center">
+              <div class="pic">
+                <img src="/image/card-head8.png" alt="">
+              </div>
+              <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">作業本</p>
+              <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">汽車自媒體</p>
+            </div></a>
+          </div>
+          <div class="partner card"><a href="https://www.youtube.com/channel/UCeJ3KfWHEMVPqEK8Lp4Yc_Q" target="_blank">
+            <div class="row justify-content-center">
+              <div class="pic">
+                <img src="/image/card-head9.png" alt="">
+              </div>
+              <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">大原大次郎</p>
+              <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">汽車自媒體</p>
+            </div></a>
+          </div>
+          <div class="partner card"><a href="https://www.instagram.com/ilsachang1109/?fbclid=IwAR0x0c-7DhjPtBi9OXp6j579pdHOC2UH97hHeYbUwzpY9Jq1Q2_1FFmr0ec" target="_blank">
+            <div class="row justify-content-center">
+              <div class="pic">
+                <img src="/image/card-head10.png" alt="">
+              </div>
+              <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">張琳</p>
+              <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">時尚網紅</p>
+            </div></a>
+          </div>         
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="partner-s container">
+          <div class="partner card"><a href="https://www.youtube.com/channel/UCm2mMdP4_g5JmC4D-xXHJHg" target="_blank">
+            <div class="row justify-content-center">
+              <div class="pic">
+                <img src="/image/card-head11.png" alt="">
+              </div>
+              <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">束褲3C團</p>
+              <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">3C自媒體</p>
+            </div></a>
+          </div>
+          <div class="partner card"><a href="https://www.facebook.com/DreamWorker666/" target="_blank">
+            <div class="row justify-content-center">
+              <div class="pic">
+                <img src="/image/card-head12.png" alt="">
+              </div>
+              <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">夢工廠模型公仔工作室</p>
+              <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">公仔模型自媒體</p>
+            </div></a>
+          </div>
+          <div class="partner card"><a href="https://www.youtube.com/channel/UCU6nhA37pbvzw-JXhAB87Mg" target="_blank">
+            <div class="row justify-content-center">
+              <div class="pic">
+                <img src="/image/card-head13.png" alt="">
+              </div>
+              <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">大閒者</p>
+              <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">電玩 Youtuber</p>
+            </div></a>
+          </div>
+          <div class="partner card"><a href="https://www.youtube.com/channel/UCjE1WlhC1zb0dShFmJRRR2g" target="_blank">
+            <div class="row justify-content-center">
+              <div class="pic">
+                <img src="/image/card-head14.png" alt="">
+              </div>
+              <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">幹嘛啦！ET</p>
+              <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">健身 Youtuber</p>
+            </div></a>
+          </div>
+          <div class="partner card" style="border: none;"><a href="" target="_blank">
+            <div class="row justify-content-center">
+              <div class="pic">
+                <img src="..." alt="">
+              </div>
+              <p class=" col-lg-12" style="padding-top: 16px; text-align: center;"></p>
+              <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;"></p>
+            </div></a>
+          </div>         
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carousel-example-partner" role="button" data-slide="prev" id="carousel-partner-p">
+      <span class="fa fa-chevron-left fa-lg" style="color:#2E3A59;"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-partner" role="button" data-slide="next" id="carousel-partner-n">
+      <span class="fa fa-chevron-right fa-lg" style="color:#2E3A59;"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- 
+<div class="partner mobile container" id="partner">
+  <h2 class="partner-second-title" style="text-align: center;">駐站作家<div class="box-border col-1 m-auto"></div></h2>
+  <div class="partner-s container">
+    <div class="partner card"><a href="https://www.facebook.com/doctorlee53" target="_blank">
+      <div class="row justify-content-center">
+        <div class="pic">
+          <img src="/image/card-head.png" alt="">
+        </div>
+        <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">李亦伸LYS</p>
+        <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">籃球記者、球評</p>
+      </div></a>
+    </div>
+    <div class="partner card"><a href="https://www.facebook.com/ChicoChica.Fun" target="_blank">
+      <div class="row justify-content-center">
+        <div class="pic">
+          <img src="/image/card-head2.png" alt="">
+        </div>
+        <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">奇可奇卡</p>
+        <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">生活插畫家</p>
+      </div></a>
+    </div>
+    <div class="partner card"><a href="https://www.youtube.com/channel/UCEsOyx6LKAyiHacXUGND9KQ" target="_blank">
+      <div class="row justify-content-center">
+        <div class="pic">
+          <img src="/image/card-head3.png" alt="">
+        </div>
+        <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">一貧伏特加</p>
+        <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">棒球 Youtuber</p>
+      </div></a>
+    </div>
+    <div class="partner card"><a href="https://www.youtube.com/channel/UCVIycx42aqhp8-ZRyeLN4Gw" target="_blank">
+      <div class="row justify-content-center">
+        <div class="pic">
+          <img src="/image/card-head4.png" alt="">
+        </div>
+        <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">亞次圓</p>
+        <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">動漫 Youtuber</p>
+      </div></a>
+    </div>
+    <div class="partner card"><a href="https://www.youtube.com/channel/UClZyxQNa1B4q9YSG7Z8TGpA/featured" target="_blank">
+      <div class="row justify-content-center">
+        <div class="pic">
+          <img src="/image/card-head5.png" alt="">
+        </div>
+        <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">無臉</p>
+        <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">動漫 Youtuber</p>
+      </div></a>
+    </div>
+    <div class="partner card"><a href="https://www.facebook.com/3cdog" target="_blank">
+      <div class="row justify-content-center">
+        <div class="pic">
+          <img src="/image/card-head6.png" alt="">
+        </div>
+        <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">科技狗 3C Dog</p>
+        <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">3C自媒體</p>
+      </div></a>
+    </div>
+    <div class="partner card"><a href="https://www.facebook.com/HankRS225" target="_blank">
+      <div class="row justify-content-center">
+        <div class="pic">
+          <img src="/image/card-head7.png" alt="">
+        </div>
+        <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">Hank 汽車部落格</p>
+        <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">汽車自媒體</p>
+      </div></a>
+    </div>
+    <div class="partner card"><a href="https://www.youtube.com/channel/UC291LvruKOnyWPHDrL1U3yw" target="_blank">
+      <div class="row justify-content-center">
+        <div class="pic">
+          <img src="/image/card-head8.png" alt="">
+        </div>
+        <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">作業本</p>
+        <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">汽車自媒體</p>
+      </div></a>
+    </div>
+    <div class="partner card"><a href="https://www.youtube.com/channel/UCeJ3KfWHEMVPqEK8Lp4Yc_Q" target="_blank">
+      <div class="row justify-content-center">
+        <div class="pic">
+          <img src="/image/card-head9.png" alt="">
+        </div>
+        <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">大原大次郎</p>
+        <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">汽車自媒體</p>
+      </div></a>
+    </div>
+    <div class="partner card"><a href="https://www.instagram.com/ilsachang1109/?fbclid=IwAR0x0c-7DhjPtBi9OXp6j579pdHOC2UH97hHeYbUwzpY9Jq1Q2_1FFmr0ec" target="_blank">
+      <div class="row justify-content-center">
+        <div class="pic">
+          <img src="/image/card-head10.png" alt="">
+        </div>
+        <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">張琳</p>
+        <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">時尚網紅</p>
+      </div></a>
+    </div>         
+    <div class="partner card"><a href="https://www.youtube.com/channel/UCm2mMdP4_g5JmC4D-xXHJHg" target="_blank">
+      <div class="row justify-content-center">
+        <div class="pic">
+          <img src="/image/card-head11.png" alt="">
+        </div>
+        <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">束褲3C團</p>
+        <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">3C自媒體</p>
+      </div></a>
+    </div>
+    <div class="partner card"><a href="https://www.facebook.com/DreamWorker666/" target="_blank">
+      <div class="row justify-content-center">
+        <div class="pic">
+          <img src="/image/card-head12.png" alt="">
+        </div>
+        <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">夢工廠模型公仔工作室</p>
+        <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">公仔模型自媒體</p>
+      </div></a>
+    </div>
+    <div class="partner card"><a href="https://www.youtube.com/channel/UCU6nhA37pbvzw-JXhAB87Mg" target="_blank">
+      <div class="row justify-content-center">
+        <div class="pic">
+          <img src="/image/card-head13.png" alt="">
+        </div>
+        <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">大閒者</p>
+        <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">電玩 Youtuber</p>
+      </div></a>
+    </div>
+    <div class="partner card"><a href="https://www.youtube.com/channel/UCjE1WlhC1zb0dShFmJRRR2g" target="_blank">
+      <div class="row justify-content-center">
+        <div class="pic">
+          <img src="/image/card-head14.png" alt="">
+        </div>
+        <p class=" col-lg-12" style="padding-top: 16px; text-align: center;">幹嘛啦！ET</p>
+        <p class="" style="padding-top: 14px; font-size:14px ; color:#acacac;">健身 Youtuber</p>
+      </div></a>
+    </div>
+ 
+  </div>
+</div> -->
+
+
+
+<footer class="text-center text-white" style="background-color: #2E3A59">
+  <div class="container pt-4">
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-light m-1"
+        href="https://www.facebook.com/PotatomediaOfficial" 
+        target="_blank"
+        role="button"
+        data-mdb-ripple-color="light"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-light m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="light"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-light m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="light"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-light m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="light"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-light m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="light"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+    </section>
+  </div>
+  <div class="text-center text-light p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <p class="text-light" style="font-family:'PingFangTC' ;">Copyright &copy; 2021 Sync Lab.All rights reserved.</p>
+  </div>
+</footer>
+
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
